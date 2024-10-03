@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Crawler</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="D:\test2\stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Excel Sheet Crawler</h2>
+
+        <!-- Input for Excel URL -->
+        <div class="input-section">
+            <label for="excel-url">Enter Excel File URL:</label>
+            <input type="text" id="excel-url" placeholder="Paste the Excel file link here">
+            <button id="fetch-headers">Fetch Headers</button>
+        </div>
+
+        <!-- Dropdown for selecting header -->
+        <div class="header-selection" id="header-selection" style="display:none;">
+            <label for="header-choice">Select a header to crawl:</label>
+            <select id="header-choice"></select>
+            <button id="fetch-sheet">Fetch Sheet</button>
+        </div>
+
+        <!-- Display sheet content -->
+        <div class="sheet-content" id="sheet-content"></div>
+    </div>
+
+    <!-- Linking the JavaScript file just before the closing body tag -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</body>
+
+</html>
